@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underground DJ</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+
+    <!-- Grain Texture -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">EST. 2025</div>
+        <ul>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#dates">DATES</a></li>
+        </ul>
+        <button class="menu-btn">MENU</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero-bg">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+
+        <div class="hero-content">
+           <img src="ex1.png" alt="logo" class="hero-logo">
+            
+           
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Music Section -->
+    <section id="music">
+        <div class="section-fade">
+            <h2>LATEST <span class="acid-text" style="font-style: italic;">TRANSMISSIONS</span></h2>
+
+            <div class="track-grid">
+                <!-- Track 1 -->
+                <div class="track-card hover-trigger">
+                    <div class="album-art">
+                        <div class="art-placeholder">COVER ART</div>
+                    </div>
+                    <div class="track-info">
+                        <div>
+                            <h3 class="track-title">WAREHOUSE 001</h3>
+                            <p class="track-meta">145 BPM • TECHNO</p>
+                        </div>
+                        <button class="play-btn">▶</button>
+                    </div>
+                </div>
+
+                <!-- Track 2 -->
+                <div class="track-card hover-trigger">
+                    <div class="album-art">
+                        <div class="art-placeholder">COVER ART</div>
+                    </div>
+                    <div class="track-info">
+                        <div>
+                            <h3 class="track-title">ACID RAIN</h3>
+                            <p class="track-meta">138 BPM • ACID</p>
+                        </div>
+                        <button class="play-btn">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://soundcloud.com/miss-pepper-12" class="sc-link hover-trigger" target="_blank">LISTEN ON SOUNDCLOUD ↗</a>
+        </div>
+    </section>
+
+    <!-- Dates Section -->
+    <section id="dates">
+        <div class="section-fade">
+            <div class="dates-header">
+                <h2>UPCOMING <br><span class="acid-text">RITUALS</span></h2>
+                <div class="tour-subtitle">
+                    WORLD TOUR<br>
+                    2026
+                </div>
+            </div>
+
+            <div class="dates-list">
+                <div class="date-item hover-trigger">
+                    <div class="date-date">07 FEB</div>
+                    <div class="date-city">DIVINE BRUTALITY</div>
+                    <div class="date-venue">VILLEJUIF</div>
+                </div>
+
+                <div class="date-item hover-trigger">
+                    <div class="date-date">14 FEB</div>
+                    <div class="date-city">HARD ARENA</div>
+                    <div class="date-venue">TOULOUSE</div>
+                </div>
+
+                <div class="date-item hover-trigger">
+                    <div class="date-date">21 FEB</div>
+                    <div class="date-city">BANG</div>
+                    <div class="date-venue">CHAUMONT</div>
+                </div>
+                
+                <div class="date-item hover-trigger">
+                    <div class="date-date">28 FEB</div>
+                    <div class="date-city">CHRONICLES</div>
+                    <div class="date-venue">NANCY</div>
+                </div>
+
+                <div class="date-item hover-trigger">
+                    <div class="date-date">14 MAR</div>
+                    <div class="date-city">HARD ARENA</div>
+                    <div class="date-venue">TOULOUSE</div>
+                </div>
+
+                <div class="date-item hover-trigger">
+                    <div class="date-date">21 MAR</div>
+                    <div class="date-city">HARDSTYLE ATTITUDE #16</div>
+                    <div class="date-venue">STRASBOURG</div>
+                </div>
+
+                <div class="date-item hover-trigger">
+                    <div class="date-date">30 MAY</div>
+                    <div class="date-city">MISSION FESTIVAL</div>
+                    <div class="date-venue">RIEDHOLZ</div>
+                </div>
+
+                <div class="date-item hover-trigger">
+                    <div class="date-date">18 JUL</div>
+                    <div class="date-city">URVILLE FESTIVAL</div>
+                    <div class="date-venue">URVILLE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section class="bio-section">
+        <div class="section-fade bio-container">
+            <div>
+                <img src="artists_snimka.png" alt="Artist" class="artist-img">
+            </div>
+            <div class="bio-content">
+                <h3>THE ARTIST</h3>
+                <p class="bio-headline">
+                    MISS PEPPER
+                </p>
+                <p class="bio-text">
+                    La	plus	spicy	des DJane	nous	rejoindra	pour	cette	édition	« NOM	DE	LA	SOIRÉE »!  🔥
+                </p>
+                <p class="bio-text">
+                        Préparez-vous	à	un	set	Extra-Raw	des	plus	pimentés,	alliant	mélodies	et	kicks	puissants	⚡
+                </p>
+                <p class="bio-text">
+                    Une	DJane	pétillante	et	débordante	d’énergie	sur	scène	qu’il	ne	faut	pas	louper	!
+                </p>
+                
+                <a href="https://www.instagram.com/misspepper_dj/" class="btn-press hover-trigger" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
