@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
 :root {
-    --color-acid: #c63023;
+    --color-acid: #c63123e7;
     --color-dark: #000000;
     --color-white: #ffffff;
     --font-main: 'Syne', sans-serif;
@@ -272,22 +272,22 @@ h2 {
     h2 { font-size: 5rem; }
 }
 
-/* Music Grid */
-.track-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
 @media (min-width: 768px) {
     .track-grid { grid-template-columns: 1fr 1fr; }
 }
 
 .track-card {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
-    transition: border-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Разстояние между плеъра и текста */
+    min-height: 150px; /* Фиксирана височина, за да са равни картите */
+}
+
+/* Ако искаш да запазиш пропорциите на грида */
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .track-card:hover {
