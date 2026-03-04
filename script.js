@@ -48,3 +48,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+const bpm = 128;
+const msPerBeat = (60 / bpm) * 1000;
+const logo = document.getElementById('technoLogo');
+
+function applyBeat() {
+   
+    logo.classList.remove('kick-active');
+    void logo.offsetWidth; // da se povtarq
+    logo.classList.add('kick-active');
+}
+
+// Започва веднага и повтаря в ритъм
+setInterval(applyBeat, msPerBeat);

@@ -22,21 +22,20 @@ body {
     color: var(--color-white);
     font-family: var(--font-main);
     overflow-x: hidden;
-    cursor: none; /* Custom cursor */
+    cursor: none; 
     line-height: 1.5;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    cursor: none; /* Custom cursor override */
+    cursor: none; 
 }
 
 ul {
     list-style: none;
 }
 
-/* Typography Helpers */
 .font-mono {
     font-family: var(--font-mono);
 }
@@ -45,7 +44,6 @@ ul {
     color: var(--color-acid);
 }
 
-/* Custom Cursor */
 #cursor {
     position: fixed;
     top: 0;
@@ -69,7 +67,6 @@ ul {
     border: none;
 }
 
-/* Grain Overlay */
 .grain-overlay {
     position: fixed;
     top: 0;
@@ -82,7 +79,6 @@ ul {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-/* Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -170,14 +166,13 @@ header {
     right: 25%;
     width: 250px;
     height: 250px;
-    background-color: #6d28d9; /* purple */
+    background-color: #6d28d9;
 }
 
 .hero-content {
     z-index: 10;
     text-align: center;
     padding: 0 1rem;
-    /* Titles removed as requested, centering button */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,7 +180,6 @@ header {
     height: 100%;
 }
 
-/* Listen Button */
 .btn-listen {
     position: relative;
     display: inline-flex;
@@ -217,7 +211,6 @@ header {
     50% { opacity: 0.5; }
 }
 
-/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
     bottom: 0.5rem;
@@ -242,7 +235,6 @@ header {
     background: linear-gradient(to bottom, var(--color-acid), transparent);
 }
 
-/* Sections General */
 section {
     padding: 6rem 1.5rem;
     max-width: 1200px;
@@ -279,11 +271,11 @@ h2 {
 .track-card {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Разстояние между плеъра и текста */
-    min-height: 150px; /* Фиксирана височина, за да са равни картите */
+    gap: 15px; 
+    min-height: 150px; 
 }
 
-/* Ако искаш да запазиш пропорциите на грида */
+
 .track-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -373,7 +365,6 @@ h2 {
     color: var(--color-acid);
 }
 
-/* Dates List */
 .dates-header {
     display: flex;
     flex-direction: column;
@@ -532,9 +523,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* Намаляваме разстоянието между елементите */
     gap: 0.5rem; 
-    /* Даваме на целия контейнер малко място отгоре, за да не е залепен за навигацията */
     padding-top: 5vh; 
 }
 
@@ -546,4 +535,18 @@ footer {
     
     margin: 0; 
     margin-top: -20vh; 
+}
+.kick-active {
+    animation: technoKick 0.1s forwards;
+}
+
+@keyframes technoKick {
+    0% { 
+        transform: scale(1.15); 
+        filter: brightness(2.5) contrast(1.5); 
+    }
+    100% { 
+        transform: scale(1); 
+        filter: brightness(1) contrast(1);
+    }
 }
