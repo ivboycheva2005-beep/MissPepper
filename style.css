@@ -702,3 +702,21 @@ nav {
     border-bottom: none;
     box-shadow: none;
 }
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        word-break: break-word;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1;
+    }
+}
