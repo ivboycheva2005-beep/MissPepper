@@ -62,3 +62,26 @@ function applyBeat() {
 
 // Започва веднага и повтаря в ритъм
 setInterval(applyBeat, msPerBeat);
+
+const menuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileLinks = document.querySelectorAll('.mobile-menu a');
+
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+
+        if (mobileMenu.classList.contains('active')) {
+            menuBtn.textContent = 'CLOSE';
+        } else {
+            menuBtn.textContent = 'MENU';
+        }
+    });
+
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            menuBtn.textContent = 'MENU';
+        });
+    });
+}
