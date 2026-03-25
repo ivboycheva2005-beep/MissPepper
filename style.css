@@ -374,7 +374,7 @@ h2 {
     color: var(--color-acid);
 }
 .scis-link:hover {
-    color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .dates-header {
