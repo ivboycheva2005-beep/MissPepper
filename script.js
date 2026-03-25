@@ -1,4 +1,3 @@
-// Custom Cursor Logic
 const cursor = document.getElementById('cursor');
 const triggers = document.querySelectorAll('a, button, .hover-trigger');
 
@@ -33,7 +32,6 @@ document.querySelectorAll('.section-fade').forEach(section => {
     observer.observe(section);
 });
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

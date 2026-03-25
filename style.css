@@ -695,3 +695,7 @@ footer {
         display: none;
     }
 }
+nav {
+    border-bottom: none;
+    box-shadow: none;
+}
