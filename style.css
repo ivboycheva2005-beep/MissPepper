@@ -582,3 +582,63 @@ footer {
     background-color: var(--color-acid);
     color: black;
 }
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    /* секции да имат по-малко padding */
+    section {
+        padding: 4rem 1rem;
+    }
+
+    /* голямото MISS PEPPER лого */
+    .hero-logo {
+        width: 90vw;
+    }
+
+    /* заглавия */
+    h2 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    /* dates да станат една под друга */
+    .date-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .date-date,
+    .date-city,
+    .date-venue {
+        width: 100%;
+        text-align: left;
+    }
+
+    .date-city {
+        font-size: 1.3rem;
+    }
+
+    /* artist секцията */
+    .bio-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .artist-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .artist-link {
+        display: block;
+        margin-top: 1rem;
+    }
+    #cursor {
+        display: none;
+    }
+
+    body {
+        cursor: auto;
+    }
+}
