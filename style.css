@@ -360,9 +360,21 @@ h2 {
     text-decoration-color: var(--color-acid);
     text-underline-offset: 4px;
 }
+.csis-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-acid);
+    transition: color 0.3s;
+    text-decoration-color: var(--color-white);
+}
 
 .sc-link:hover {
     color: var(--color-acid);
+}
+.scis-link:hover {
+    color: var(--color-dark);
 }
 
 .dates-header {
