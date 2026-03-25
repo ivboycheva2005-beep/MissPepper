@@ -362,12 +362,15 @@ h2 {
 }
 .scis-link {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
     font-family: var(--font-mono);
     font-size: 0.875rem;
-    color: var(--color-acid);
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 4px;
+    color: black;
     transition: color 0.3s;
-    text-decoration-color: var(--color-white);
 }
 
 .sc-link:hover {
