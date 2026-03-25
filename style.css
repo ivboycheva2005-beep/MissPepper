@@ -362,12 +362,12 @@ h2 {
 }
 .scis-link {
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 10rem;
     margin-right: 2rem;
     font-family: var(--font-mono);
     font-size: 0.875rem;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: rgb(198, 114, 114);
     text-underline-offset: 4px;
     color: black;
     transition: color 0.3s;
