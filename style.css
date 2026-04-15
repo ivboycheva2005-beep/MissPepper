@@ -724,3 +724,16 @@ nav {
         line-height: 1;
     }
 }
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem !important; 
+        white-space: nowrap;          
+        letter-spacing: -0.02em;     
+    }
+
+    #music h2 span {
+        display: inline-block;        
+    }
+}
