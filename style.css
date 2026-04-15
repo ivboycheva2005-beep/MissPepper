@@ -727,13 +727,13 @@ nav {
 
 
 @media (max-width: 480px) {
-    h2 {
-        font-size: 1rem !important; 
-        white-space: nowrap;          
-        letter-spacing: -0.02em;     
+    #music h2 {
+        font-size: 6.5vw !important; 
+        display: block !important;
+        width: 100%;
     }
-
+    
     #music h2 span {
-        display: inline-block;        
+        display: inline !important;
     }
 }
